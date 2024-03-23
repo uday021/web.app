@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <header>
+        </header>
+
+    <main>
+        <section class="about-section">
+            <h1>About Us</h1>
+            <hr>
+                <strong>Introduction:</strong> <br>
+                	Skin diseases are a global health concern, demanding accurate diagnosis for effective treatment.
+                	Challenges in identifying skin conditions and privacy concerns hinder the development of robust diagnostic tools.
+                	Early detection of skin diseases is critical for improved patient outcomes and prevention of complications.
+                	This project employs transfer learning to address the need for extensive labeled datasets while ensuring data privacy.
+                
+                <br><br>
+                <p> <strong style="text-decoration: underline;">Objectives</strong>
+  
+                    <ul>
+                      <li style="text-decoration: underline;">Automated Skin Disease Detection:</li>
+                      <li>Develop an automated system for detecting various skin diseases from dermatological images using transfer learning.</li>
+                      <li style="text-decoration: underline;">Privacy-Preserving Approach:</li>
+                      <li>Implement transfer learning to leverage pre-trained models, reducing the reliance on extensive datasets and addressing privacy concerns.</li>
+                      <li style="text-decoration: underline;">Multi-Class Classification:</li>
+                      <li>Train the model for multi-class classification, enabling differentiation between different types of skin diseases.</li>
+                      <li style="text-decoration: underline;">User-Friendly Interface:</li>
+                      <li>Design an intuitive interface for healthcare professionals to upload images and receive diagnostic predictions with confidence scores.</li>
+                      <li style="text-decoration: underline;">Model Accuracy Improvement:</li>
+                      <li>Improve detection accuracy compared to traditional methods using transfer learning techniques.</li>
+                    </ul>
+                    <br>
+                <strong>Abstract:</strong> <br>
+                Skin diseases affect a significant portion of the population, causing discomfort, cosmetic concerns, and in some cases, serious health risks. Traditional diagnosis often relies on visual examination by dermatologists, which can be time-consuming and prone to subjectivity. This project explores the application of transfer learning techniques to develop an automated skin disease identification system. Leveraging pre-trained deep learning models on large image datasets, we aim to create a web-based solution that allows users to upload skin images and receive predictions of potential skin diseases. The goal is to enhance accessibility to preliminary skin assessments and provide individuals with initial guidance on further seeking appropriate medical help.
+                <br><br>
+              
+                <strong>Problem Statement:</strong> <br>
+                Timely and accurate diagnosis of skin diseases can be challenging due to limited access to dermatologists, particularly in remote or underserved areas. <br>
+                Visual identification of skin conditions can be subjective, with variations in diagnostic accuracy between healthcare providers. <br>
+                Misdiagnosis or delays in diagnosis can negatively impact timely treatment and exacerbate skin conditions.
+                <br><br>
+              
+                <strong>Project Scope:</strong> 
+                <ul>
+                  <li>Dataset Acquisition: Curate a labeled dataset of skin disease images covering a comprehensive range of common conditions.</li>
+                  <li>Model Selection and Adaptation: Explore and select suitable pre-trained convolutional neural network (CNN) models as the basis for transfer learning (e.g., VGG, ResNet, Inception).</li>
+                  <li>Transfer Learning: Adapt the selected pre-trained CNN model to the skin disease identification task, fine-tuning layers to achieve high accuracy.</li>
+                  <li>Web Application Development: Create a user-friendly web interface.</li>
+                </ul>
+              
+                <strong>Secure image upload of skin lesions</strong> <br>
+                Image preprocessing (including resizing and normalization) <br>
+                Display of model predictions, including disease names and confidence scores
+                <br><br>
+              
+                Evaluation: Use standard performance metrics (accuracy, precision, recall, F1-score) on a held-out testing set to evaluate the model's effectiveness.
+                <br><br>
+              
+                <strong>Technologies / Tools to be used :</strong>
+               
+                <strong>Collecting Data</strong>
+                <ul>
+                  <li>kaggle (data science community)<a target="_blank" href="https://www.kaggle.com/datasets/kmader/skin-cancer-mnist-ham10000">URL</a></li>
+                  <li>web scraping</li> 
+                </ul>
+              
+                <strong>Augmenting Data Sets</strong>  
+                <ul>
+                  <li>Augmentor (python library)</li>
+                  <li>OpenCV (python library)</li>
+                </ul>
+              
+                <strong>Implementing Deep learning and Transfer learning</strong>
+                <ul> 
+                  <li>Tensorflow (python library)</li> 
+                  <li>keras (python library)</li>
+                </ul>
+                   
+
+              
+            <strong>Creating Webapp</strong> 
+                <ul>
+                  <li>Flask(Python Framework)</li>
+                </ul>
+              </p>
+              <br>
+              
+              <h1>Literature Survey</h1>
+
+<h2>1. Brain Tumor Detection Using Transfer Learning in Deep Learning Summary:</h2>
+<p>Alla, S. S. M., and K. Athota focus on automatic and reliable segmentation methods for early brain tumor diagnosis. Deep learning-based convolutional neural networks (CNNs) were used to extract features and classify brain tumors based on MRI images. Transfer learning was applied to three types of CNNs (Inception-V3, VGG-16, and VGG-19) to achieve reasonable accuracy. The results showed that applying transfer learning to a CNN resulted in high accuracy in less time and with a smaller dataset. This work introduces a novel technique for analyzing data with few annotations by transferring information from the source domain to the target domain.</p>
+
+<h3>Benefits:</h3>
+<ul>
+  <li>Features extraction made easy</li>
+  <li>Achieved a high training accuracy</li>
+</ul>
+
+<h3>Drawbacks:</h3>
+<ul>
+  <li>No proper dataset is used, trained on small dataset.</li>
+  <li>This may lead to overfitting the model to use dataset</li>
+</ul>
+
+<h2>2. Kumar et al. (2016)</h2>
+<h3>Title: Dermatological Disease Detection Using Image Processing and Machine Learning.</h3>
+<p>Summary:
+<ul>
+  <li>Applies image processing and machine learning for dermatological disease detection.</li>
+  <li>Emphasizes the combination of computational methods.</li>
+</ul>
+
+<h3>Benefits:</h3>
+<ul>
+  <li>Integration of image processing and machine learning techniques.</li>
+</ul>
+
+<h3>Drawbacks:</h3>
+<ul>
+  <li>Specifics on the image processing and machine learning techniques are not clearly outlined.</li>
+</ul>
+
+<h2>3. Suganya R. (2016)</h2>
+<h3>Title: An Automated Computer Aided Diagnosis of Skin Lesions Detection and Classification for Dermoscopy Images.</h3>
+<p>Summary:
+<ul>
+  <li>Focuses on automated computer-aided diagnosis for dermoscopy images.</li>
+  <li>Likely employs image processing and classification techniques.</li>
+</ul>
+
+<h3>Benefits:</h3>
+<ul>
+  <li>Automated approach for diagnosing skin lesions.</li>
+</ul>
+
+<h3>Drawbacks:</h3>
+<ul>
+  <li>Lack of detailed methodologies and results.</li>
+</ul>
+
+<!-- Repeat the same structure for the remaining sections -->
+
+<h2>4. Zeljkovic et al. (2015)</h2>
+<h3>Title: Supplemental Melanoma Diagnosis for Darker Skin Complexion Gradients.</h3>
+<p>Summary:
+<ul>
+  <li>Concentrates on supplemental melanoma diagnosis, particularly for darker skin complexions.</li>
+  <li>Addresses the need for specialized approaches for diverse skin tones.</li>
+</ul>
+
+<h3>Benefits:</h3>
+<ul>
+  <li>Acknowledges the importance of diversity in melanoma diagnosis.</li>
+</ul>
+
+<h3>Drawbacks:</h3>
+<ul>
+  <li>Specific methodologies and outcomes are not clearly outlined.</li>
+</ul>
+
+<h2>5. Yasir et al. (2014)</h2>
+<h3>Title: Dermatological Disease Detection using Image Processing and Artificial Neural Network.</h3>
+<p>Summary:
+<ul>
+  <li>Applies image processing and artificial neural network for disease detection.</li>
+  <li>Provides insights into the use of computational methods.</li>
+</ul>
+
+<h3>Benefits:</h3>
+<ul>
+  <li>Integration of image processing and neural network for comprehensive analysis.</li>
+</ul>
+
+<h3>Drawbacks:</h3>
+<ul>
+  <li>Specifics on the image processing techniques are not clearly stated.</li>
+</ul>
+
+<h2>Key Findings</h2>
+<p>During our research, we found that many of the projects are still using traditional machine learning and deep learning techniques. They are facing problems in collecting or gathering data to train the model. So we decided to use the transfer learning approach,</p>
+
+<ul>
+  <li>Utilize transfer learning with pre-trained models to leverage knowledge from large datasets, potentially improving the model's performance with limited dermatological data.</li>
+  <li>Augment the training dataset to include a diverse range of skin tones, conditions, and backgrounds to enhance the model's generalization.</li>
+  <li>Enhance the user interface to facilitate seamless image upload, display of diagnosis results, and user feedback, creating a user-friendly experience.</li>
+</ul>
+
+<h2>Conclusion</h2>
+<p>The skin disease detection has become one of the major issues in the medical field and can be solved if it is diagnosed in its early stage. The literature survey mentioned above shows different techniques used in detection of skin diseases across the world. We can see that how application of machine learning helps in lessening the work of dermatologists. Users can make use of android app without having extra equipment.</p>
+
+<h2>References</h2>
+<ol>
+  <li>Jessica Vellasco, Cherry Pasicon, Jonathan Apuang, "A Smartphone-Based Skin Disease Classification Using Mobilenet Model", International Journal of Advanced Trends in Computer Science and Engineering, Vol 8, 2019.</li>
+  <li>Ms. Seema Kolkur, Dr. D.R.Kalbande, Dr. Vidya Khakar, "Machine Learning Approaches to Multi-Class Human Skin Disease Detection International Journal on Computer Intelligence Research, vol 14, 2018.</li>
+  <li>Prem J. Patil, Sagsr J. Buchkule, Varsha S. More, Sanket G. Abhale, “Skin Disease Detection using Image Processing Technique”. International Research Journal of Engineering and Technology (IRJET), vol 7, June 2020.</li>
+  <li>Nawal Soliman ALolifi ALEnezi, “A Method of Skin Disease Detection Using Image Processing And Machine Learning”. International Learning and Technology Conference 2019.</li>
+  <li>Shuchi Bhadula, Sachin Sharma, Piyush Juyal, Chitransh Kulshrestha, “Machine Learning Algorithms based Skin Disease Detection”. International Journal of Innovative Technology and Exploring Engineering (IJITEE), vol9, Dec 2019.</li>
+</ol>
+<h2>Advantages of Transfer Learning with VGG16</h2>
+
+<ul>
+    <li><strong>Reduced Training Time:</strong> By leveraging pre-trained weights, the model requires less training data and time to achieve good performance.</li>
+    <li><strong>Improved Generalizability:</strong> Transfer learning helps the model learn robust features that are generally applicable to image recognition tasks, including skin disease identification.</li>
+    <li><strong>Overfitting Prevention:</strong> Starting with pre-trained weights helps prevent the model from overfitting to a limited dataset of skin disease images.</li>
+</ul>
+
+<h2>Disadvantages of Transfer Learning with VGG16</h2>
+
+<ul>
+    <li><strong>Fine-Tuning Complexity:</strong> While VGG16 is a good starting point, fine-tuning all layers might not be optimal. Determining which layers to fine-tune requires experimentation.</li>
+    <li><strong>Potential Bias:</strong> The pre-trained VGG16 model might have biases inherited from the ImageNet dataset, which may not be ideal for skin disease classification. Techniques like data augmentation can help mitigate this.</li>
+    <li><strong>Computational Cost:</strong> VGG16 is a large architecture, requiring more computational resources for training and inference compared to some lighter models.</li>
+</ul>
+
+
+
+</body>  
+               
+              
+
+            <h2>Our Team members</h2> 
+            <p>
+                <table>
+                  <tr>
+                    <th>Name</th>
+                    <th>Student ID</th>
+                  </tr>
+                  <tr>
+                    <td>Badri nadh</td>
+                    <td>21MIS7058</td>
+                  </tr>
+                  <tr>
+                    <td>T.Ravi Kumar</td>
+                    <td>21MIS7180</td>
+                  </tr>
+                  <tr>
+                    <td>U.Uday Kiran</td>
+                    <td>21MIS7174</td>
+                  </tr>
+                  <tr>
+                    <td>Vamsi</td>
+                    <td>21MIC7068</td>
+                  </tr>
+                  <tr>
+                    <td>Lokesh</td>
+                    <td>21MIC7041</td>
+                  </tr>
+                  </table>
+              </p>
+              
+              <br>
+              
+
+        
+        </section>
+    </main>
+
+    <footer>
+        </footer>
+
+    <script src="script.js"></script> 
+</body>
+</html>

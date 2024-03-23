@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skin Disease Identification</title>
+    <link rel="stylesheet" href="style.css"> </head>
+    <style>
+        td {
+            text-align: left;
+        }
+    </style>
+<body>
+    
+    <button class="close-btn">&times;</button>
+
+    
+    <header>
+        <div class="logo">
+        </div>
+        <nav>
+            <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="signup.html">Signup</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <h1>Your Healthy Skin Is Our Priority</h1>
+            <!-- <p>An introduction or brief description of your project here.</p> -->
+        </section>
+        <section class="project-info">
+            <h2>Transfer Learning for Skin Disease Identification</h2>
+            </section>
+        <section class="image-upload">
+            <h2>Upload Your Image</h2>
+
+            <form action="" method="post" id="form" enctype="multipart/form-data">
+                <input type="file" name="image" id="image">
+                <br>
+                <button type="submit" id="btn" style="margin-top: 15px;">Analyze</button>
+            </form>
+
+            <div style="margin-top: 15px;" id="result">
+                <table border="2">
+                    <tr>
+                        <td> class : </td>
+                        <td> <span  id="class_name"></span> </td>
+                    </tr>
+                    <tr>
+                        <td> score : </td>
+                        <td> <span id="score"></span> </td>
+                    </tr>
+                    <tr>
+                        <td> Causes : </td>
+                        <td><span id="Causes"></span> </td>
+                    </tr>
+                    <tr>
+                        <td> Symptoms : </td>
+                        <td> <span id="Symptoms"></span> </td>
+                    </tr>
+                    <tr>
+                        <td> Precautions : </td>
+                        <td> <span id="Precautions"></span></td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+    </main>
+    <footer>
+    </footer>
+    <script>
+        const form = document.getElementById("form");
+        const class_name = document.getElementById("class_name");
+        const Precautions = document.getElementById("Precautions");
+        const Symptoms = document.getElementById("Symptoms");
+        const score = document.getElementById("score");
+        const result = document.getElementById("result");
+        const Causes = document.getElementById("Causes");
+
+        result.style.display='none';
+        
+        document.getElementById("image").onchange = function() {
+            result.style.display='none';
+        }
+        
+        form.onsubmit = function(e) {
+            e.preventDefault();
+
+            let formData = new FormData(form);
+            console.log("loading...........")
+            fetch("https://skincancer2003.pythonanywhere.com/predict/skin-cancer", {
+                method: 'POST',
+                body: formData
+            })
+            .then(
+                r => r.json()
+            )
+            .then(
+                res => {
+                    
+                    result.style.display = 'block';
+
+                    console.log(res);
+
+                    class_name.innerText = res.class;
+                    score.innerText = res.score;
+                    Causes.innerText = res.Causes;
+                    Precautions.innerText = res.Precautions;
+                    Symptoms.innerText = res.Symptoms;
+                }
+            )
+            .catch(
+                e => console.log(e)
+            )
+        }
+    </script>
+</body>
+</html>

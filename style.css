@@ -1,0 +1,189 @@
+
+
+
+/* General Styles */
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; 
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    color: #333;
+}
+/* Header Styles */
+header {
+    background-color: #2c3e50; 
+    color: #fff;
+    padding: 15px 0;
+    position: fixed; /* Make header stay at the top*/
+    width: 100%;  
+    top: 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); 
+}
+.logo {
+    float: left; 
+    font-size: 1.5em;
+    font-weight: bold;
+}
+nav {
+    float: right;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+nav li {
+    display: inline-block;
+    margin-left: 25px; 
+}
+nav a {
+    color: #fff;
+    text-decoration: none; 
+}
+/* Main Content Styles */
+main {
+    padding: 80px 20px 20px; /* Adjust top padding to clear the header */
+}
+.hero {
+    background-color: #fff;
+    text-align: center;
+    padding: 40px 20px; 
+    border-radius: 5px; 
+    margin-bottom: 30px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+}
+.project-info, 
+.image-upload {
+    margin-top:50 ;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.image-upload button { 
+    background-color: #3498db; 
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    position: fixed; 
+    bottom: 0;
+    width: 100%;
+}
+/* General Styles (from previous examples) */
+
+/* Login Container Styles */
+.login-container {
+    width: 400px;
+    margin: 80px auto; /* Center the container */
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+.login-container h1 {
+    text-align: center;
+    margin-bottom: 20px; 
+    color: #3498db; /* Example color, adjust as needed */
+}
+.input-field {
+    margin-bottom: 15px;
+}
+.input-field label {
+    display: block;
+    margin-bottom: 5px;
+}
+.input-field input[type="text"],
+.input-field input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 3px; 
+}
+button[type="submit"] { 
+    background-color: #3498db; 
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 3px;
+    font-size: 15px;
+}
+/* Styling for the signup link */
+.login-container p {
+    text-align: center;
+    margin-top: 20px;
+}
+.login-container a {
+    color: #2980b9; 
+    text-decoration: none;
+}
+/* General Styles (from previous examples) */
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; 
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    color: #333; 
+}
+/* Signup Container Styles */
+.signup-container {
+    width: 400px;
+    margin: 80px auto; /* Center the container */
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+.signup-container h1 {
+    text-align: center;
+    margin-bottom: 20px; 
+    color: #3498db; 
+}
+.input-field {
+    margin-bottom: 15px;
+}
+.input-field label {
+    display: block;
+    margin-bottom: 5px;
+}
+.input-field input[type="text"],
+.input-field input[type="email"],
+.input-field input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 3px; 
+}
+button[type="submit"] { 
+    background-color: #3498db; 
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 3px;
+    font-size: 15px;
+}
+/* Styling for the login link */
+.signup-container p {
+    text-align: center;
+    margin-top: 20px;
+}
+.signup-container a {
+    color: #2980b9; 
+    text-decoration: none;
+}
+/* ... other styles ... */
+.login-page { 
+    background-image: url("https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGRvY3RvcnxlbnwwfHwwfHx8MA%3D%3D");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+ }
